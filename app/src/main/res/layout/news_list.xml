@@ -1,0 +1,93 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news"
+    android:backgroundTint="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="8dp"
+    android:layout_marginTop="6dp"
+    card_view:cardCornerRadius="6dp"
+    card_view:contentPadding="2dp"
+    android:elevation="5dp"
+    android:layout_marginBottom="-3dp"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/newsRow"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="16dp"
+        android:paddingTop="4dp"
+        android:focusable="true"
+        >
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView_client_id"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true" />-->
+
+        <ImageView
+            android:id="@+id/news_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_outline"
+            android:transitionName="@string/blue_name" />
+
+
+        <TextView
+            android:id="@+id/textView_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/news_image"
+            android:ellipsize="end"
+            android:fontFamily="@font/hintedlainesansregular"
+            android:maxLines="2"
+            android:text="CSK vs RCB: MS Dhoni Criticises Chepauk Track Despite Win For Chennai Super Kings"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_news_title"
+            android:layout_marginStart="-1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignStart="@+id/textView_news_title"
+            android:layout_toRightOf="@+id/news_image"
+            android:fontFamily="@font/hintedlainesansregular"
+            android:maxLines="2"
+            android:paddingTop="3dp"
+            android:id="@+id/news_content"
+            android:text="Chennai Super Kings began their IPL title defence with a seven-wicket win over Royal Challengers Bangalore in the opening match of IPL 2019 at the MA Chidambaram Stadium on Saturday night. However, it was not exactly the spectacle that fans had hoped for with…" />
+
+        <TextView
+            android:id="@+id/news_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_news_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="49dp"
+            android:layout_toRightOf="@+id/news_image"
+            android:alpha=".54"
+            android:ellipsize="end"
+            android:fontFamily="@font/hintedlainesansregular"
+            android:maxLines="1"
+            android:text="NDTVSports.com"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

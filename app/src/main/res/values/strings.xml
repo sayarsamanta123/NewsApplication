@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NewsApplication</string>
+    <string name="blue_name" translatable="false">blue</string>
+    <string name="please_wait">please wait</string>
+</resources>

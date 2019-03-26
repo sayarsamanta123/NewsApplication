@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppThemeOverlay.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/faveo</item>
+        <item name="android:textColorPrimary">@color/faveo</item>
+        <item name="android:textColorSecondary">@color/faveo</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionModeCloseDrawable">@color/white</item>
+        <item name="android:actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name="actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.AppCompat.ActionMode</item>
+    </style>
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">24dp</item>
+        <item name="android:maxWidth">40dp</item>
+        <item name="android:width">40dp</item>
+    </style>
+    <style name="MyMaterialTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+    </style>
+    <style name="ToolbarTextAppearance">
+        <item name="android:fontFamily">@font/hintedlainesansregular</item>
+    </style>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="appBarColor">#3333FF</color>
+    <color name="toolBarTextColor">#FFFFFF</color>
+    <color name="mainActivityTopBar">#081d27</color>
+    <color name="faveo">#04aaf7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="toolbarColor">#154c66</color>
+    <color name="black">#000000</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_200">#eeeeee</color>
+</resources>
