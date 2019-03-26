@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.android.volley.Cache;
 import com.example.sayarsamanta.newsapplication.adapter.NewsListAdapter;
 import com.example.sayarsamanta.newsapplication.R;
 import com.example.sayarsamanta.newsapplication.volleyClass.RXPostConnector;
@@ -26,6 +27,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -76,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
             downloadPosts();
 
         }
+
+
         try {
             if (Prefs.getString("response", null).equals("")) {
 
@@ -126,11 +130,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Post getPost(JSONObject current) throws JSONException {
         Post result = new Post(current.getString("urlToImage"),current.getString("author"),current.getString("content"),current.getString("title"),current.getString("url"));
-//        result.iamgeUrl = current.getString("urlToImage");
-//        result.newsContent = current.getString("content");
-//        result.newsSource = current.getString("author");
-//        result.newsTitle = current.getString("title");
-//        result.newsUrl=current.getString("url");
         Log.d("title",result.iamgeUrl);
         return result;
     }

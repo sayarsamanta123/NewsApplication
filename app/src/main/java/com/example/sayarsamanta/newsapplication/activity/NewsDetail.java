@@ -113,7 +113,6 @@ public class NewsDetail extends AppCompatActivity {
             progress.dismiss();
         }
     }
-
     private boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService( CONNECTIVITY_SERVICE );
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
